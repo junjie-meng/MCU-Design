@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../arm/src/rtl/ARM_Memory.sv" \
+"../../../../../arm/src/rtl/ARM_SingleCycle_Controller.sv" \
+"../../../../../arm/src/rtl/ARM_SingleCycle_DataPath.sv" \
+"../../../../../arm/src/rtl/ARM_SingleCycle_Processor.sv" \
+"../../../../../arm/src/rtl/ARM_SingleCycle_SoC.sv" \
+"../../../../../arm/sim/tb/ARM_SingleCycle_SoC_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
